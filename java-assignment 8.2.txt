@@ -1,0 +1,23 @@
+package myPack;
+
+public class NegativeAgeException extends Exception {
+	NegativeAgeException(){
+		super("Age cannot be neagtive");
+	}
+}
+
+
+package myPack;
+import java.util.*;
+import java.lang.*;
+public class IntToString{
+	
+		 public static void main(String args[])throws NegativeAgeException{
+			 Scanner scan= new Scanner(System.in);
+			 System.out.println("Enter the age");
+			 int age=scan.nextInt();
+			 if(age<0) throw new NegativeAgeException();
+		 }
+	   
+	}
+
